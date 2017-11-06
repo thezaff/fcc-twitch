@@ -22,13 +22,15 @@ $(document).ready(function () {
             $("#outputBoard").html(output);                
         });        
     }
-    $(".displayOns").click(function () {
-        $(".offline").css("display", "none");
+    $("#displayOns").click(function () {
+        $(".offline").fadeOut(1000);
+        $(".online").fadeIn(1000);
     });
-    $(".displayOffs").click(function () {
-        $(".online").css("display", "none");
+    $("#displayOffs").click(function () {
+        $(".online").fadeOut(1000);
+        $(".offline").fadeIn(1000);
     });
-    $(".displayAll").click(function () {
+    $("#displayAll").click(function () {
         $(".row").fadeIn(1000);
         console.log("BBSE OK");
     });
